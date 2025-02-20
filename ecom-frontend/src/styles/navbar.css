@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #3D8D7A;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;  /* Keeps navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #B3D8A8;
+}
+
+body {
+  padding-top: 60px; /* Ensures content does not hide behind navbar */
+}

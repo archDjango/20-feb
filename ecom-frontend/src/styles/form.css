@@ -1,0 +1,87 @@
+/* Full-screen centered form */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FBFFE4;
+}
+
+/* Card-like form container */
+.form-container {
+  width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form title */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #3D8D7A;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Form fields */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #3D8D7A;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+.product-form input, 
+.product-form textarea, 
+.product-form select {
+  padding: 12px;
+  border: 1px solid #A3D1C6;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.product-form input:focus, 
+.product-form textarea:focus, 
+.product-form select:focus {
+  border-color: #3D8D7A;
+  outline: none;
+}
+
+/* Button */
+.submit-btn {
+  background: #3D8D7A;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+/* Button hover effect */
+.submit-btn:hover {
+  background: #B3D8A8;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
+    padding: 25px;
+  }
+}
